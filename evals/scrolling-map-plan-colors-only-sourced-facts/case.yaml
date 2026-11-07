@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: scrolling-map-plan-colors-only-sourced-facts
+expected_outcome: |
+  A visual plan for a sticky-stage scrolling map with one dot per branch, scroll steps that drive the stage, dots colored only by sourced facts, the 90 unlocated branches placed inside their states and disclosed as such, a stacked phone layout, status styling that survives selection, reduced-motion behavior, and a QA plan that steps through every scroll step at three widths and probes computed styles.

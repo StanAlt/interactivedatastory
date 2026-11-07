@@ -1,0 +1,8 @@
+node_modules/
+evals/results/
+*.log
+.DS_Store
+/qa/
+/tmp/
+__pycache__/
+*.pyc

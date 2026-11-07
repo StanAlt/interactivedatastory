@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "interactive-blog",
+  "version": "1.0.0",
+  "description": "Produces research-grade interactive blog features: deep research with a source ledger, a scrolling dot-map story or animated hero, clickable charts, social image, tests, browser QA and shipping.",
+  "author": {
+    "name": "Stan Altshuller",
+    "url": "https://www.acadia.im"
+  },
+  "homepage": "https://github.com/StanAlt/interactivedatastory",
+  "repository": "https://github.com/StanAlt/interactivedatastory",
+  "license": "MIT",
+  "keywords": [
+    "blog",
+    "data-visualization",
+    "scrollytelling",
+    "react",
+    "research"
+  ],
+  "skills": [
+    "./skills"
+  ]
+}

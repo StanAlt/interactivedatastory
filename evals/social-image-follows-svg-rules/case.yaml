@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: social-image-follows-svg-rules
+expected_outcome: |
+  social.svg is a valid 1200 x 630 SVG built from the skill's template: the Acadia logo group and kicker, a 70 to 77 px headline in three or four lines, one large accent number with its caption, and acadia.im. It has no duplicate attributes and no bare ampersands, and was validated.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: blocked-fetch-and-stale-number
+expected_outcome: |
+  The response stops fetching after the DNS failure, names the hosts that need allowlisting, and keeps researching with web search. It searches the last 14 days before disagreeing with the user's 25%, separates event types and denominators, and writes source notes that record how each figure was verified, without using a tracker-only number for a chart.

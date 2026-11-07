@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: copy-pass-removes-banned-patterns
+expected_outcome: |
+  section-clean.md keeps every fact and number from the draft and removes the patterns Stan rejects: no em dashes, none of the banned words and frames, no run of three short sentences, at most one "actually", a plain heading, and nothing added that the draft did not say.
+context:
+  scaffold_script: place-files.sh

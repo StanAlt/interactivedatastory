@@ -1,0 +1,22 @@
+[
+  {"query": "ok so i want to do another one of those interactive research posts for acadia.im like the AI layoffs one, this time on why private credit funds are gating redemptions. clickable charts, the source list at the bottom, calendar booking at the end. can you do deep research first", "should_trigger": true},
+  {"query": "turn the stablecoin market share research we did last week into an interactive blog post. hero animation, sticky chapter nav, a chart you can click through by chain and a 'read the chart values' table. same look as /blog/ai-bust-market-crash-history", "should_trigger": true},
+  {"query": "Build a scrollytelling story for the blog about why regional bank deposits moved after the March run. NYT style, dark map, one dot per branch, zoom steps, dots that fly into groups. I've got 400 branches with deposit changes in branches.csv.", "should_trigger": true},
+  {"query": "can you upgrade the 'selling alternative data' post on our site into one of the interactive features? keep the argument but add charts people can click and a source ledger", "should_trigger": true},
+  {"query": "data story on who switched vendors after the pricing change: a unit chart where one dot is 1% of customers, regrouped by reason, then a before and after trail chart by segment. it's for the acadia blog", "should_trigger": true},
+  {"query": "i need an interactive article for acadia.im about hedge fund fee compression. deep research, then charts, then the booking calendar at the end. like the seat pricing one", "should_trigger": true},
+  {"query": "make it like the midterms blue wave page but for the Q3 earnings season: map, trails, the whole thing, with the file vs story toggle at the end", "should_trigger": true},
+  {"query": "Create the next Acadia research feature: 'Where did venture dollars go in 2026?' 5-6 chapters, each with its own interactive, a social image, tests and browser QA. Branch is claude/venture-story", "should_trigger": true},
+  {"query": "we want a blog post with a calculator in it, sliders for assumptions and a results panel, plus the usual research sourcing and the booking section. topic is what a weekly publishing plan costs for an RIA", "should_trigger": true},
+  {"query": "deep research and turn it into a post. topic: how AI changed junior hiring in fintech. needs the interactive hero and the clickable company atlas we did before", "should_trigger": true},
+  {"query": "write a 1,200 word SEO blog post for acadia.im about alternative data compliance reviews and schedule it for next Tuesday with a hero image", "should_trigger": false},
+  {"query": "make a LinkedIn carousel from the midterms post, 5 slides, big text, easy to read on a phone", "should_trigger": false},
+  {"query": "research the competitive landscape for portfolio analytics vendors and give me a written report with sources, no website changes needed", "should_trigger": false},
+  {"query": "here's a csv of AUM by quarter (aum_q.csv). make me one clean bar chart as a png i can paste into a slide", "should_trigger": false},
+  {"query": "there's a typo in the hero subtitle of the ai layoffs interactive page, 'enrty' should be 'entry'. fix it and push to the branch", "should_trigger": false},
+  {"query": "build a React dashboard for our Supabase MRR table with filters by plan and month, internal use only", "should_trigger": false},
+  {"query": "turn the interactive blog about the market crash into a 12 slide deck for the board meeting on friday", "should_trigger": false},
+  {"query": "set up a SessionStart hook so npm ci runs automatically when a cloud session starts in this repo", "should_trigger": false},
+  {"query": "write the title tag and meta description for the midterms post, under 60 and 155 characters", "should_trigger": false},
+  {"query": "explain how scrollytelling works with IntersectionObserver, i'm trying to understand it before i hire someone to build one", "should_trigger": false}
+]

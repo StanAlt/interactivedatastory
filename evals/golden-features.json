@@ -1,0 +1,10 @@
+{
+  "note": "Features shipped on acadia.im, checked with scripts/check-feature.mjs. expectFail lists the checks each feature is known to fail (recorded 2026-11-07 against AcadiaIM commit d94bddf, where all five pass). A new failure is a regression; a listed failure that disappears means the feature improved and this file should be updated.",
+  "features": [
+    {"slug": "2026-midterms-blue-wave-exit-polls", "label": "2026 midterms (scrolling map)", "expectFail": []},
+    {"slug": "ai-bust-market-crash-history", "label": "AI bust and market crashes", "expectFail": []},
+    {"slug": "ai-benchmarks-2026-which-ai-should-you-use", "label": "AI benchmarks", "expectFail": []},
+    {"slug": "ai-layoffs-2026-where-did-the-jobs-go", "label": "AI layoffs", "expectFail": []},
+    {"slug": "one-person-ten-agents-what-is-a-seat", "label": "Agents and seat pricing", "expectFail": []}
+  ]
+}

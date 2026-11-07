@@ -1,0 +1,20 @@
+{
+  "name": "interactive-blog-skill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Interactive Blog skill for Claude, with tests and evals.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "validate": "claude plugin validate .",
+    "check-copy": "node skills/interactive-blog/scripts/check-copy.mjs",
+    "check-feature": "node skills/interactive-blog/scripts/check-feature.mjs",
+    "eval:golden": "node evals/run-golden.mjs",
+    "eval:trigger": "python3 evals/run-trigger.py",
+    "eval:cases": "claude plugin eval . --no-publish --scaffold --allow-tools Write,Edit,Bash"
+  }
+}

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: brief-and-plan-from-a-vague-request
+expected_outcome: |
+  A brief and a research plan, with nothing built. The brief has a one-sentence question, five to seven chapters each with a different interactive figure, a closing question with the booking invitation, a kebab-case slug, a short question-led title, the date 2026-11-09 and post id 87 (highest existing id 86, plus one). The research plan searches the newest events first, records denominators, and says web fetching may be blocked.
+context:
+  scaffold_script: place-files.sh
