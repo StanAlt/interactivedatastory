@@ -65,8 +65,13 @@ export const blogPosts = [
 // src/App.jsx
 const AiJobsStudy = React.lazy(() => import('./components/AiJobsStudy'));
 // inside <Routes>, BEFORE <Route path="/blog/:slug" ...>
-<Route path="/blog/ai-layoffs-2026-where-did-the-jobs-go" element={<PageShell hideChatWidget><React.Suspense fallback={<div className="min-h-screen pt-32 text-center">Loading research…</div>}><AiJobsStudy /></React.Suspense></PageShell>} />
+<Route path="/blog/ai-layoffs-2026-where-did-the-jobs-go" element={<PageShell studyChat="ai-layoffs-2026-where-did-the-jobs-go"><React.Suspense fallback={<div className="min-h-screen pt-32 text-center">Loading research…</div>}><AiJobsStudy /></React.Suspense></PageShell>} />
 ```
+
+`studyChat` mounts Victorio, Acadia's site assistant, as a small monogram in the lower-right corner. He receives the
+sections of the feature's `content` that match each question, the chapter on screen, and any state a chart publishes
+with `setStudyFocus` from `src/lib/victorioContext.js`. Add three suggested questions for the feature to
+`src/data/victorioStudies.js`, each answerable from `content`. Do not use `hideChatWidget` on feature routes.
 
 ```js
 // src/components/Blog.jsx — FEATURED_SLUGS[0] is the blog spotlight
