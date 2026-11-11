@@ -119,9 +119,10 @@ class catalog) and `references/chart-patterns.md` (copy-ready components).
   outcomes.
 - **Hero:** a subject-specific SVG that animates through real data or a clear
   concept (the ladder whose entry rung shrinks 0 → 19%; the chair surrounded by
-  1–12 agents). It autoplays, stops permanently on any interaction, pauses
-  offscreen and in background tabs, and is static under reduced motion. Never a
-  generic stat-card hero.
+  1–12 agents). It plays by default as soon as any part is on screen, stops
+  permanently on any interaction, and pauses offscreen and in background tabs.
+  Under reduced motion it still plays, with instant steps (no transitions) and a
+  visible Pause button. Never a generic stat-card hero.
 - **One distinct interactive per chapter**, chosen from the pattern catalog:
   switchable card board, forecast-versus-measured scale, horizontal bars,
   sortable atlas with a detail panel and 100-square waffle, vertical bars with a

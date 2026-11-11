@@ -155,8 +155,9 @@ Card details that make it look finished:
 
 Purposeful only: data transitions (width, height, left) 0.6–0.9s
 `cubic-bezier(0.22, 0.8, 0.24, 1)`; entrance 0.3–0.45s. Hero autoplay steps
-1.4–1.7s with a 3.2s hold on the final state. Every animation is disabled in
-`@media (prefers-reduced-motion: reduce)`.
+1.4–1.7s with a 3.2s hold on the final state. Every transition and animation is
+disabled in `@media (prefers-reduced-motion: reduce)`; the hero keeps stepping,
+instantly, with its Pause button visible.
 
 ## 8. Responsive rules
 

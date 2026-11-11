@@ -48,12 +48,20 @@ coral. Steps through `ladderReleases`.
 **Conceptual orbit** (`Hero` in reference-seat-feature.jsx). Use when the idea is
 a ratio that grows (one seat, 1–12 agents). Mark it "Conceptual illustration".
 
-Autoplay controller (both heroes): `isPlaying`, `isInView`
-(IntersectionObserver, threshold 0.2), `isPageVisible` (visibilitychange),
-`reducedMotion` (matchMedia), `manualRef` latch. `stopAnimation()` cancels the
-timeout synchronously and sets the latch; any control calls it on pointerdown,
-keydown and change. Only the Play button clears the latch. Live region is
-`aria-live="off"` while playing.
+Autoplay controller (both heroes): `isPlaying` starts true for everyone,
+`isInView` (IntersectionObserver, threshold 0.01, so a hero just below the fold
+on a phone starts as soon as it shows), `isPageVisible` (visibilitychange),
+`manualRef` latch. Reduced motion does not stop autoplay: the CSS reduced-motion
+block removes transitions, so steps change instantly, and the Play/Pause button
+is always rendered. `stopAnimation()` cancels the timeout synchronously and sets
+the latch; any control calls it on pointerdown, keydown and change. Only the Play
+button clears the latch. Live region is `aria-live="off"` while playing.
+
+Hero performance: a step must not repaint hundreds of SVG elements. Draw static
+marks once (a CSS `radial-gradient` background or a memoized layer) and redraw
+only what changes; fade a changing group as one element (`key` the `<svg>` layer,
+animate its opacity) rather than animating each circle. Check with 4x CPU
+throttling on a phone viewport: no long tasks over 50 ms while the hero plays.
 
 ## Chapter patterns
 
